@@ -1,0 +1,37 @@
+.textInputDiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.textInputDiv input{
+    font-size: 16px;
+    padding: 10px 10px 10px 18px;
+    width: 50%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border: none;
+    color: rgba(0, 0, 0, 0.8);
+}
+@media (max-width: 1000px) {
+    .textInputDiv input{
+        width: 60%;
+    }
+}
+.textInputDiv input:focus{
+    outline: none;
+}
+.textInputDiv button{
+    font-size: 16px;
+    padding: 12px 6px 12px 4px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.4s; 
+    text-align: center;
+}
+button:hover{ 
+    background-color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+} 
