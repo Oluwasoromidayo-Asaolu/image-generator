@@ -39,8 +39,9 @@ const onButtonGenerate = () => {
 
 const downloadImage = () => {
   const downloadLink = document.createElement('a');
+  const filename = RAW_TEXT ? `${RAW_TEXT}.jpg` : `generated-image-${Date.now()}.jpg`;
   downloadLink.href = image;
-  downloadLink.download = `${RAW_TEXT}.jpg`;
+  downloadLink.download = filename;
   downloadLink.click();
 }
 const handleInputChange = (event) => {
