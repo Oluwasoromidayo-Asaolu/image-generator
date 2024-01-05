@@ -40,7 +40,7 @@ const onButtonGenerate = () => {
 const downloadImage = () => {
   const downloadLink = document.createElement('a');
   downloadLink.href = image;
-  downloadLink.download = 'generated-image.jpg';
+  downloadLink.download = `${RAW_TEXT}.jpg`;
   downloadLink.click();
 }
 const handleInputChange = (event) => {
