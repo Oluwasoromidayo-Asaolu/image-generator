@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 import { useState } from 'react';
 import Loader from 'react-loader';

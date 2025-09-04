@@ -1,16 +1,14 @@
-import { useCallback } from "react";
+import React, { useCallback } from 'react';
 import Particles from "react-tsparticles";
 import './ParticlesDesign.css';
-import { loadSlim } from "tsparticles-slim"; 
 
-const ParticlesDesign = () => {
+const ParticlesBackground = () => {
     const particlesInit = useCallback(async engine => {
         console.log(engine);
-        await loadSlim(engine);
     }, []);
 
     const particlesLoaded = useCallback(async container => {
-        await console.log(container);
+        console.log(container);
     }, []);
 
     return (
@@ -72,7 +70,7 @@ const ParticlesDesign = () => {
                     number: {
                         density: {
                             enable: true,
-                            area: 800,
+                            area: 1050,
                         },
                         value: 80,
                     },
@@ -91,4 +89,5 @@ const ParticlesDesign = () => {
         />
     );
 };
-export default ParticlesDesign;
+
+export default ParticlesBackground;
